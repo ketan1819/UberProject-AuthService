@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/UberProject-AuthService-ketan.iml" filepath="$PROJECT_DIR$/.idea/UberProject-AuthService-ketan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberProject-AuthService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberProject-AuthService.main.iml" />
     </modules>
   </component>
 </project>

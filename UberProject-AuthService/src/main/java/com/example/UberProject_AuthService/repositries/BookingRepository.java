@@ -1,11 +1,11 @@
 package com.example.UberProject_AuthService.repositries;
 
-import com.example.UberProject_AuthService.models.Passenger;
+import com.example.UberProject_AuthService.models.Booking;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface passengerRepositries extends JpaRepository<Passenger,Long>
-{
+public interface BookingRepository extends JpaRepository<Booking, Long> {
+
 
 }
