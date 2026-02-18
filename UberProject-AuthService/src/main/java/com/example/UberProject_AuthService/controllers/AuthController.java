@@ -25,7 +25,9 @@ public class AuthController
     }
 
     @GetMapping("/signin")
-    public ResponseEntity<?>signIn()
+    public ResponseEntity<?>signIn(
+
+    )
     {
 
         return new ResponseEntity<>(10,HttpStatus.ACCEPTED);
