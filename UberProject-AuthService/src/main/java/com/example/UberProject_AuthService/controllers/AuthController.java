@@ -1,7 +1,6 @@
 package com.example.UberProject_AuthService.controllers;
 
 import com.example.UberProject_AuthService.dtos.AuthRequestDto;
-import com.example.UberProject_AuthService.dtos.AuthResponseDto;
 import com.example.UberProject_AuthService.dtos.PassengerResponseDto;
 import com.example.UberProject_AuthService.dtos.PassengerSignUpResuestDto;
 import com.example.UberProject_AuthService.service.AuthService;
@@ -64,7 +63,7 @@ public class AuthController
             response.setHeader(HttpHeaders.SET_COOKIE,cookie.toString());
             String jwtToken = jwtService.createToken(payload,authentication.getPrincipal().toString());
 //            return new ResponseEntity<>("Successfull auth",HttpStatus.OK);
-            return new ResponseEntity<>(AuthResponseDto.builder().success(true).build(),HttpStatus.OK);
+            return new ResponseEntity<>(jwtToken,HttpStatus.OK);
         }
         else
         {
