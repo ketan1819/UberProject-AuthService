@@ -9,6 +9,6 @@ import java.util.Optional;
 @Repository
 public interface passengerRepositries extends JpaRepository<Passenger,Long>
 {
-    @Override
+
     Optional<Passenger> findPassengerByEmail(String email);
 }

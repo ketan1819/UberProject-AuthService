@@ -5,6 +5,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Collections;
 
 // why we need this class
 // Because spring security works on userdetails polymorphic type for auth
@@ -25,12 +26,20 @@ public class AuthPassengerDetails extends Passenger implements UserDetails
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return Collections.emptyList();
+
     }
 
     @Override
     public String getUsername() {
         return this.Username;
+    }
+
+    @Override
+    public String getPassword()
+    {
+        return this.password;
+
     }
 
 
