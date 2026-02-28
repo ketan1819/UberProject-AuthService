@@ -2,10 +2,9 @@ package com.example.UberProject_AuthService.service;
 
 import com.example.UberProject_AuthService.dtos.PassengerResponseDto;
 import com.example.UberProject_AuthService.dtos.PassengerSignUpResuestDto;
-import com.example.UberProject_AuthService.models.Passenger;
 import com.example.UberProject_AuthService.repositries.passengerRepositries;
+import com.example.UberProject_EntityService.models.Passenger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

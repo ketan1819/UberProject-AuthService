@@ -2,13 +2,14 @@ package com.example.UberProject_AuthService.dtos;
 
 import lombok.*;
 
-@Getter
-@Setter
-@Builder
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AuthResponseDto
-{
+@Getter
+@Setter
 
+public class AuthResponseDto {
 
+    private String token;
+    private String message;
 }
